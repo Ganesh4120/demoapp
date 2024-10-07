@@ -1,0 +1,115 @@
+.attendance-container {
+  background-color: #282828; /* Dark background */
+  padding: 20px;
+  color: #fff; /* White text */
+  font-family: Arial, sans-serif;
+}
+
+.attendance-status {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333; /* Dark card background */
+  padding: 20px;
+  border-radius: 10px;
+  transition: background-color 0.3s, color 0.3s; /* Transition effects */
+}
+
+.attendance-overview, .timing-section, .current-time, .actions {
+  flex: 1;
+  margin: 0 10px;
+}
+
+.attendance-overview h3, .timing-section h3 {
+  margin-bottom: 10px;
+}
+
+.attendance-metrics {
+  display: flex;
+  justify-content: space-around;
+}
+
+.metric {
+  text-align: center;
+  color: #fff; /* White text for metrics */
+}
+
+.metric-icon {
+  font-size: 24px; /* Icon size */
+}
+
+.avg-hrs {
+  color: #007bff; /* Blue for average hours */
+}
+
+.on-time {
+  color: #28a745; /* Green for on-time arrival */
+}
+
+.week-days {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 10px;
+}
+
+.week-days span {
+  background-color: #555; /* Grey background for weekdays */
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.weekend {
+  background-color: red; /* Red for weekends */
+}
+
+.timing-info div {
+  margin-bottom: 5px;
+}
+
+.current-time h1 {
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.actions button {
+  background-color: orange; /* Default button color */
+  border: none;
+  padding: 10px 20px;
+  color: white;
+  margin-bottom: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.leave-request-btn {
+  background-color: #ff9800; /* Leave request button color */
+}
+
+.work-from-home-btn {
+  background-color: #ff5722; /* Work from home button color */
+}
+
+/* Dark mode styles */
+body.dark-mode .attendance-container {
+  background-color: #fff; /* Light background in dark mode */
+  color: #282828; /* Dark text in dark mode */
+}
+
+body.dark-mode .attendance-status {
+  background-color: #ccc; /* Light card background in dark mode */
+}
+
+body.dark-mode .actions button {
+  color: #282828; /* Dark text for buttons in dark mode */
+}
+
+body.dark-mode .metric-icon {
+  color: #282828; /* Dark color for icons in dark mode */
+}
